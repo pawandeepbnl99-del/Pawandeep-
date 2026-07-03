@@ -14,7 +14,7 @@ SUPPORT_GROUP = base64.b64decode("aHR0cHM6Ly90Lm1lL0JMQUNLX0tOT1dMRURHRV8xOTA=")
 # ========================================================
 
 # Bot Token (Set as Environment Variable on Render)
-TOKEN = os.getenv('TELEGRAM_BOT_TOKEN')
+TOKEN = os.getenv('8977512229:AAE1Ql36uqZ8bd55Ha4cFSFvBkopeLuBF74)
 if not TOKEN:
     raise ValueError("TELEGRAM_BOT_TOKEN environment variable not set!")
 
@@ -25,7 +25,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def home():
-    return "✅ BLACK_KNOWLEDGE_190 Video Downloader Bot is Running!"
+    return "✅ @all_in_one_dl_pro_Bot is Running!"
 
 def run_flask():
     app.run(host='0.0.0.0', port=10000)
@@ -65,7 +65,7 @@ def start(message):
         "• Instagram Reels\n"
         "• Facebook\n"
         "• And 1000+ other sites\n\n"
-        "🤖 Powered by @BLACK_KNOWLEDGE_190"
+        "🤖 Powered by @all_in_one_dl_pro_bot
     )
     bot.send_message(message.chat.id, welcome_text, parse_mode='Markdown', reply_markup=create_keyboard())
 
@@ -138,5 +138,5 @@ def handle_message(message):
         bot.edit_message_text(f"❌ **Error:** {error_msg}\n\nTry again or contact owner.", chat_id, status_msg.message_id)
 
 if __name__ == '__main__':
-    print("🚀 BLACK_KNOWLEDGE_190 Video Downloader Bot Started...")
+    print("🚀  @all_in_one_dl_pro_bot had Started...")
     bot.infinity_polling()
